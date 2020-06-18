@@ -302,5 +302,8 @@ for (counter = 0; counter < 20; counter += 1) {
   const greyDiv = document.createElement("div");
   greyDiv.setAttribute("class", "greyBlocks23");
   greyDiv.style.width = widthPixels + "px";
+  if (widthPixels % 2 === 1) {
+    greyDiv.style.backgroundColor = "red";
+  }
   parentElement.append(greyDiv);
 }
